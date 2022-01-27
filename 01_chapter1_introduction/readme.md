@@ -12,3 +12,6 @@
 - Each entry appended to teh log is assigned a unique, sequential log entry number that acts as its unique key.
 - The ordering of records defines a notion of “time” since entries to the left are defined to be older then entries to the right. The log entry number can be thought of as the “timestamp” of the entry.
 - convenient property of being decoupled from any particular physical clock. Useful in distributed systems.
+- A file is an array of bytes, a table is an array of records, and a log is really just a kind of table or file where the records are sorted by time.
+
+## Logs in Databases
